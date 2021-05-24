@@ -10,6 +10,7 @@ public class SerializationTest {
 
 		try {
 			Printer p1 = Printer.getPrinter();
+			System.out.println(p1.hashCode());
 			ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("printer_data.ser"));
 			oos.writeObject(p1);
 			oos.flush();
@@ -20,6 +21,8 @@ public class SerializationTest {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		
+		
 	}
 
 }

@@ -22,8 +22,8 @@ public class Printer extends CommonUtils {
 	}
 
 	public Object readResolve() {
-		// return InnerPrinter.printer;
-		throw new IllegalArgumentException("Deserialization is not allowed");
+		 return InnerPrinter.printer;
+		//throw new IllegalArgumentException("Deserialization is not allowed");
 	}
 
 	public void getMessage() {
